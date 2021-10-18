@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
-      <div className="bg-black text-white">
+      <div className="bg-black text-white py-3">
         <div className="">
           <Link
             className="text-white"
@@ -19,7 +19,7 @@ const Footer = () => {
             />
           </Link>
         </div>
-        <div className="">
+        <div className="pt-5">
           <p>&copy; 2021 Health and Hope Hospital. All Rights Reserved.</p>
         </div>
       </div>

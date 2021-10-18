@@ -3,42 +3,42 @@
         "id": 1,
         "name": "CRITICAL CARE",
         "description": "The department of Critical Care consists of 77 beds along with a high dependency unit. The team comprises of Chief Intensivists, Junior Intensivists, Senior & Junior Doctors and highly efficient, experienced and well trained nursing & paramedical staff.",
-        "img": ""
+        "img": "https://i.ibb.co/f4DMXBV/Inner-Banner-4696-6963-2969.jpg"
         
     },
     {
         "id": 2,
-        "name": "CRITICAL CARE",
-        "description": "The department of Critical Care consists of 77 beds along with a high dependency unit. The team comprises of Chief Intensivists, Junior Intensivists, Senior & Junior Doctors and highly efficient, experienced and well trained nursing & paramedical staff.",
-        "img": ""
+        "name": "PHARMACY",
+        "description": "We have a chemist located at the ground floor which is open round the clock on all days and is available to outpatients. Medicines are dispensed only on doctor’s prescription except for the over the counter medicines. Our quality control process ensures that there is no product in stock post its expiry period. We ensure that our chemist is staffed only with registered pharmacists.",
+        "img": "https://i.ibb.co/KD2Q61L/photo-1584017911766-d451b3d0e843.jpg"
         
     },
     {
         "id": 3,
-        "name": "CRITICAL CARE",
-        "description": "The department of Critical Care consists of 77 beds along with a high dependency unit. The team comprises of Chief Intensivists, Junior Intensivists, Senior & Junior Doctors and highly efficient, experienced and well trained nursing & paramedical staff.",
-        "img": ""
+        "name": "HEALTH CHECKUP",
+        "description": "Today’s urban lifestyle leads to numerous health issues. It is always advisable to undergo a regular health check-up to avoid unpleasant surprises in life. Our health check-up program is designed to promote good health and facilitate early detection of health problems. Our goal is to encourage people to take steps toward a longer, healthier and happier life.",
+        "img": "https://i.ibb.co/LzBkBKG/photo-1542884748-2b87b36c6b90.jpg"
         
     },
     {
         "id": 4,
-        "name": "CRITICAL CARE",
-        "description": "The department of Critical Care consists of 77 beds along with a high dependency unit. The team comprises of Chief Intensivists, Junior Intensivists, Senior & Junior Doctors and highly efficient, experienced and well trained nursing & paramedical staff.",
-        "img": ""
+        "name": "DIALYSIS CENTER",
+        "description": "Dialysis unit is situated on 6th floor & it functions round the clock for patient care. On an average 40 dialyses are performed every day. A team of well-known Nephrologists with nurses and technical staff look after this department. Asepsis is strictly maintained and monitored.",
+        "img": "https://i.ibb.co/fk5tGPG/Inner-Banner-5630-5425-0754.jpg"
         
     },
     {
         "id": 5,
-        "name": "CRITICAL CARE",
-        "description": "The department of Critical Care consists of 77 beds along with a high dependency unit. The team comprises of Chief Intensivists, Junior Intensivists, Senior & Junior Doctors and highly efficient, experienced and well trained nursing & paramedical staff.",
-        "img": ""
+        "name": "DIAGNOSTIC CENTER",
+        "description": "The diagnostics centre at Lilavati Hospital & Research Centre consists of several branches which includes Radiology & Pathology. The department strives to provide high quality & accurate tests at affordable prices. The department uses highly advanced equipments to ensure the best performance. The team in the department consists of experienced and well trained doctors and support staff.",
+        "img": "https://i.ibb.co/QC838s4/photo-1578496481449-cf2e845cc00c.jpg"
         
     },
     {
         "id": 6,
-        "name": "CRITICAL CARE",
-        "description": "The department of Critical Care consists of 77 beds along with a high dependency unit. The team comprises of Chief Intensivists, Junior Intensivists, Senior & Junior Doctors and highly efficient, experienced and well trained nursing & paramedical staff.",
-        "img": ""
+        "name": "AMBULANCE SERVICE",
+        "description": "These ambulances carry standard equipment’s as, a ventilator, a Defibrillator, Oxygen, suction, scoop stretcher, spine board, head immobilizer, spencer trolley stretcher and all the other lifesaving drugs.",
+        "img": "https://i.ibb.co/tKr4KDn/photo-1588321421727-f807ae7da8a9.jpg"
         
     }
 ]
