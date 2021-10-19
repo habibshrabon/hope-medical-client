@@ -5,9 +5,12 @@
   /* background-color: rgb(236, 236, 236); */
   background-color: #e8f3fc;
 }
-
-.footer-bg {
+.btn-style {
+  background-color: #149bfe;
+}
+.btn-style:hover {
   background-color: #061939;
+  color: white;
 }
 
 .App {

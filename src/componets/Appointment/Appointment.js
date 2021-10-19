@@ -1,3 +1,5 @@
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import image from "../../images/appointment-banner.png";
 import "./Appointment.css";
@@ -28,8 +30,8 @@ const Appointment = () => {
                 />
               </div>
             </div>
-            <button className="btn-info px-3 py-3 mt-5 rounded-3 ">
-              Make Appointment
+            <button className="btn-style px-3 py-3 mt-5 rounded-3 ">
+              <FontAwesomeIcon icon={faArrowRight} /> Make Appointment
             </button>
           </div>
           <div className="col-md-6">

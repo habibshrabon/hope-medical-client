@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import useAuth from "../../hooks/useAuth";
 
-const Login = () => {
-  const { signInUsingGoogle, signInUsingGithub } = useAuth();
+const Register = () => {
   return (
     <div>
       <form className="py-5 d-flex justify-content-center">
-        <div className="container p-5 w-50">
-          <h2 className="text-center pb-5">Login </h2>
+        <div className="container contact p-5 w-50">
+          <h2 className="text-center pb-5">Registration From</h2>
           <div>
             <input
               className="form-control"
@@ -25,7 +23,12 @@ const Login = () => {
               type="text"
               placeholder="Your Email Address"
             />
-
+            <textarea
+              className="form-control mt-3"
+              cols="0"
+              rows="5"
+              placeholder="Message"
+            ></textarea>
             <input
               className="form-control my-3 btn-style"
               type="submit"
@@ -34,18 +37,9 @@ const Login = () => {
           </div>
         </div>
       </form>
-      <div className="mx-5">
-        <button onClick={signInUsingGoogle} className="btn btn-info">
-          Google Sign In
-        </button>
-        <button onClick={signInUsingGoogle} className="btn btn-danger">
-          Github sign In
-        </button>
-        <br />
-        <Link to="/register">New user?</Link>
-      </div>
+      <Link to="/login">Already Registered?</Link>
     </div>
   );
 };
 
-export default Login;
+export default Register;

@@ -5,12 +5,14 @@ import doctors3 from "../../images/doc-3.jpg";
 
 const Doctors = () => {
   return (
-    <div className="container">
-      <h2>Meet Our Doctors</h2>
-      <p>
-        Our administration and support staff all have exceptional people skills
-        and trained to assist you with all medical enquiries.
-      </p>
+    <div className="container my-5">
+      <div className="pb-5">
+        <h2>Meet Our Doctors</h2>
+        <p>
+          Our administration and support staff all have exceptional people
+          skills and trained to assist you with all medical enquiries.
+        </p>
+      </div>
       <div className="row">
         <div className="col-md-4 mb-3">
           <div className="card h-100 card-bg shadow">
@@ -28,8 +30,6 @@ const Doctors = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="row">
         <div className="col-md-4 mb-3">
           <div className="card h-100 card-bg shadow">
             <img
@@ -48,8 +48,6 @@ const Doctors = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="row">
         <div className="col-md-4 mb-3">
           <div className="card h-100 card-bg shadow">
             <img

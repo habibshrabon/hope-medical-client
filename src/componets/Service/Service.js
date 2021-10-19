@@ -1,5 +1,8 @@
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Service.css";
 
 const Service = ({ service }) => {
   const { id, name, img, description } = service;
@@ -15,10 +18,11 @@ const Service = ({ service }) => {
           />
           <div className="card-body">
             <h3 className="card-title text-center">{name}</h3>
-            <p>{description}</p>
+            <p className="text-style">{description}</p>
             <Link to={`/details/${id}`}>
-              <button className="btn btn-info px-3 ms-auto">
-                Details {name.toLowerCase()}
+              <button className="btn btn-style px-3 ms-auto">
+                <FontAwesomeIcon icon={faArrowRight} /> Details{" "}
+                {name.toLowerCase()}
               </button>
             </Link>
           </div>

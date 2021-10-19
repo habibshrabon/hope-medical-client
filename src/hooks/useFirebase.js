@@ -2,6 +2,7 @@ import {
   getAuth,
   signInWithPopup,
   GoogleAuthProvider,
+  GithubAuthProvider,
   signOut,
   onAuthStateChanged,
 } from "firebase/auth";
@@ -15,15 +16,22 @@ const useFirebase = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   const auth = getAuth();
+  const googleProvider = new GoogleAuthProvider();
+  const githubProvider = new GithubAuthProvider();
 
   const signInUsingGoogle = () => {
     setIsLoading(true);
-    const googleProvider = new GoogleAuthProvider();
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         setUser(result.user);
       })
       .finally(() => setIsLoading(false));
+  };
+
+  const signInUsingGithub = () => {
+    signInWithPopup(auth, githubProvider).then((result) => {
+      setUser(result.user);
+    });
   };
 
   //observe user state change
@@ -50,6 +58,7 @@ const useFirebase = () => {
     user,
     isLoading,
     signInUsingGoogle,
+    signInUsingGithub,
     logOut,
   };
 };
