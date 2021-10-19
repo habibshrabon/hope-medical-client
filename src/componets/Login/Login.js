@@ -29,7 +29,7 @@ const Login = () => {
             <input
               className="form-control my-3 btn-style"
               type="submit"
-              value="Submit Registration"
+              value="Login"
             />
           </div>
         </div>

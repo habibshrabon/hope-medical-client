@@ -50,7 +50,7 @@ const useFirebase = () => {
       setIsLoading(false);
     });
     return () => unsubscribed;
-  }, []);
+  }, [auth]);
 
   //Sign out content
   const logOut = () => {

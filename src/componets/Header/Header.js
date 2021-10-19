@@ -8,14 +8,14 @@ import useAuth from "../../hooks/useAuth";
 const Header = () => {
   const { user, logOut } = useAuth();
   return (
-    <Navbar className="fixed-sticky" bg="transparent" expand="lg">
+    <Navbar bg="transparent" sticky="top" expand="lg">
       <Container>
-        <Navbar.Brand as={Link} className="web-name fw-bold fs-2" to="/">
+        <Navbar.Brand as={Link} className="fw-bold fs-2" to="/">
           HOPE MEDICAL
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          <Nav>
             <Nav.Link className="text-black" as={Link} to="/">
               Home
             </Nav.Link>

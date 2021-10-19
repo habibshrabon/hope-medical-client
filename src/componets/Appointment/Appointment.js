@@ -8,10 +8,13 @@ const Appointment = () => {
   return (
     <div>
       <section className="container">
-        <h2 className="text-center py-5">Make an Appointment</h2>
         <div className="row align-items-center pb-5">
           <div className="col-md-6 p-5">
-            <p>Discover the best doctors the city nearest to you</p>
+            <h2 className="text-center">Search Doctor</h2>
+            <h2 className="text-info">Make an Appointment</h2>
+            <p className="mb-5">
+              Discover the best doctors the city nearest to you
+            </p>
             <div class="row">
               <div class="col">
                 <input
