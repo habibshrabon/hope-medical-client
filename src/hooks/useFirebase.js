@@ -19,6 +19,7 @@ const useFirebase = () => {
   const googleProvider = new GoogleAuthProvider();
   const githubProvider = new GithubAuthProvider();
 
+  //Google sign in content
   const signInUsingGoogle = () => {
     setIsLoading(true);
     signInWithPopup(auth, googleProvider)
@@ -28,10 +29,14 @@ const useFirebase = () => {
       .finally(() => setIsLoading(false));
   };
 
+  //Github sign in content
   const signInUsingGithub = () => {
-    signInWithPopup(auth, githubProvider).then((result) => {
-      setUser(result.user);
-    });
+    setIsLoading(true);
+    signInWithPopup(auth, githubProvider)
+      .then((result) => {
+        setUser(result.user);
+      })
+      .finally(() => setIsLoading(false));
   };
 
   //observe user state change
@@ -47,6 +52,7 @@ const useFirebase = () => {
     return () => unsubscribed;
   }, []);
 
+  //Sign out content
   const logOut = () => {
     setIsLoading(true);
     signOut(auth)

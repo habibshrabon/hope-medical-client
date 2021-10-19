@@ -38,7 +38,7 @@ const Login = () => {
         <button onClick={signInUsingGoogle} className="btn btn-info mx-3">
           Google Sign In
         </button>
-        <button onClick={signInUsingGoogle} className="btn btn-danger">
+        <button onClick={signInUsingGithub} className="btn btn-danger">
           Github sign In
         </button>
         <br />

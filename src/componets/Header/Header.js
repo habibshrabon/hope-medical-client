@@ -32,7 +32,7 @@ const Header = () => {
             {user?.email ? (
               <Nav.Link className="text-black" onClick={logOut}>
                 <FontAwesomeIcon icon={faSignOutAlt} />
-                LogOut
+                Logout
               </Nav.Link>
             ) : (
               <Nav.Link className="text-black" as={Link} to="/login">

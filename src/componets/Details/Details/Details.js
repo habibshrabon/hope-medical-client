@@ -23,8 +23,8 @@ const Details = () => {
       <div className="row  align-items-center">
         <div className=" col-md-5">
           <img
-            style={{ height: "275px" }}
-            className="rounded shadow"
+            style={{ height: "275px ", width: "500px" }}
+            className="rounded shadow-3"
             src={ExactData[0]?.img}
             alt=""
           />
