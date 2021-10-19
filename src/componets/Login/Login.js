@@ -34,15 +34,17 @@ const Login = () => {
           </div>
         </div>
       </form>
-      <div className="mx-5">
-        <button onClick={signInUsingGoogle} className="btn btn-info">
+      <div className="mb-5">
+        <button onClick={signInUsingGoogle} className="btn btn-info mx-3">
           Google Sign In
         </button>
         <button onClick={signInUsingGoogle} className="btn btn-danger">
           Github sign In
         </button>
         <br />
-        <Link to="/register">New user?</Link>
+        <Link className="pb-5 text-decoration-none text-black" to="/register">
+          New user?
+        </Link>
       </div>
     </div>
   );
