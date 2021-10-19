@@ -22,11 +22,9 @@ const useFirebase = () => {
   //Google sign in content
   const signInUsingGoogle = () => {
     setIsLoading(true);
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        setUser(result.user);
-      })
-      .finally(() => setIsLoading(false));
+    return signInWithPopup(auth, googleProvider).finally(() =>
+      setIsLoading(false)
+    );
   };
 
   //Github sign in content

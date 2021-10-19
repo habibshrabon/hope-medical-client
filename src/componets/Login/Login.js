@@ -1,9 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
 const Login = () => {
   const { signInUsingGoogle, signInUsingGithub } = useAuth();
+  const location = useLocation();
+  const history = useHistory();
+  const redirect_uri = location.state?.from || "/home";
+
+  const handelGoogleLogIn = () => {
+    signInUsingGoogle().then((result) => {
+      history.push(redirect_uri);
+    });
+  };
   return (
     <div>
       <form className="py-5 d-flex justify-content-center">
@@ -35,7 +44,7 @@ const Login = () => {
         </div>
       </form>
       <div className="mb-5">
-        <button onClick={signInUsingGoogle} className="btn btn-info mx-3">
+        <button onClick={handelGoogleLogIn} className="btn btn-info mx-3">
           Google Sign In
         </button>
         <button onClick={signInUsingGithub} className="btn btn-danger">
