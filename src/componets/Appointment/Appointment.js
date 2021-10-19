@@ -16,7 +16,7 @@ const Appointment = () => {
               Discover the best doctors the city nearest to you
             </p>
             <div class="row">
-              <div class="col">
+              <div class="col-md-6 pb-3">
                 <input
                   type="text"
                   class="form-control"
@@ -24,7 +24,7 @@ const Appointment = () => {
                   aria-label=""
                 />
               </div>
-              <div class="col">
+              <div class="col-md-6">
                 <input
                   type="text"
                   class="form-control"
@@ -33,7 +33,7 @@ const Appointment = () => {
                 />
               </div>
             </div>
-            <button className="btn-style px-3 py-3 mt-5 rounded-3 ">
+            <button className="btn-style px-3 py-2 mt-5 rounded-3 ">
               <FontAwesomeIcon icon={faArrowRight} /> Make Appointment
             </button>
           </div>

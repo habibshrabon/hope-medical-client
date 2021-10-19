@@ -8,38 +8,38 @@ import useAuth from "../../hooks/useAuth";
 const Header = () => {
   const { user, logOut } = useAuth();
   return (
-    <Navbar bg="transparent" sticky="top" expand="lg">
+    <Navbar className="navbar-bg" collapseOnSelect sticky="top" expand="lg ">
       <Container>
-        <Navbar.Brand as={Link} className="fw-bold fs-2" to="/">
+        <Navbar.Brand as={Link} className="fw-bold fs-2 text-white" to="/">
           HOPE MEDICAL
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link className="text-black" as={Link} to="/">
+            <Nav.Link className="text-white" as={Link} to="/">
               Home
             </Nav.Link>
-            <Nav.Link className="text-black" as={Link} to="/services">
+            <Nav.Link className="text-white" as={Link} to="/services">
               Services
             </Nav.Link>
-            <Nav.Link className="text-black" as={Link} to="/doctors">
+            <Nav.Link className="text-white" as={Link} to="/doctors">
               Doctors
             </Nav.Link>
-            <Nav.Link className="text-black" as={Link} to="/appointment">
+            <Nav.Link className="text-white" as={Link} to="/appointment">
               Appointment
             </Nav.Link>
 
             {user?.email ? (
-              <Nav.Link className="text-black" onClick={logOut}>
+              <Nav.Link className="text-white" onClick={logOut}>
                 <FontAwesomeIcon icon={faSignOutAlt} />
                 Logout
               </Nav.Link>
             ) : (
-              <Nav.Link className="text-black" as={Link} to="/login">
+              <Nav.Link className="text-white" as={Link} to="/login">
                 Login
               </Nav.Link>
             )}
-            <Nav.Link className=" px-3 text-black">
+            <Nav.Link className=" px-3 text-white">
               {user?.displayName}
             </Nav.Link>
           </Nav>
@@ -63,7 +63,7 @@ export default Header;
 //     <div>
 //       <nav className="navbar navbar-light navbar-bg fixed-sticky">
 //         <div className="container">
-//           <Link className="navbar-brand  text-black fw-bold fs-1" to="/home">
+//           <Link className="navbar-brand  text-white fw-bold fs-1" to="/home">
 //             HOPE MEDICAL
 //           </Link>
 //           <div className="py-3 fw-bold">
@@ -89,7 +89,7 @@ export default Header;
 //                 Login
 //               </Link>
 //             )}
-//             <span className="text-decoration-none px-3 text-black fs-3">
+//             <span className="text-decoration-none px-3 text-white fs-3">
 //               {user?.displayName}
 //             </span>
 //           </div>

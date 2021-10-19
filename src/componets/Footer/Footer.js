@@ -6,7 +6,9 @@ const Footer = () => {
     <div className="footer-bg py-5">
       <div className="container">
         <div className="footer ">
-          <div>
+          <div className="text-white">
+            <h2>Hope Medical</h2>
+            <p>Powered By</p>
             <img
               className="img-fluid"
               src="https://www.kokilabenhospital.com/images/reliance_logo.png"
@@ -48,16 +50,16 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="row  text-white text-start mt-5">
-          <div className="col-md-8 col-12">
-            Copyrights &copy; 2021 Monirul Fahad
-          </div>
-          <div className="col-md-4 col-12">
+        <div className=" d-flex justify-content-between text-white text-start mt-5">
+          <div className="">
             <div className="d-flex justify-content-between">
               <p>Privacy & Policy</p>
               <p>Terms of Services</p>
               <p>Company History</p>
             </div>
+          </div>
+          <div className="pb-3">
+            Copyrights &copy; 2021 Hope Medical. All Rights Reserved.
           </div>
         </div>
       </div>
@@ -66,34 +68,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// import React from "react";
-// import { Link } from "react-router-dom";
-
-// const Footer = () => {
-//   return (
-//     <footer>
-//       <div className="footer-bg text-white py-3 mt-5">
-//         <div className="">
-//           <Link
-//             className="text-white"
-//             href="http://www.reliancegroupindia.com/"
-//             target="_blank"
-//           >
-//             <img
-//               src="https://www.kokilabenhospital.com/images/reliance_logo.png"
-//               width="110px"
-//               height="46px"
-//               alt=""
-//             />
-//           </Link>
-//         </div>
-//         <div className="pt-5">
-//           <p>&copy; 2021 Health and Hope Hospital. All Rights Reserved.</p>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;

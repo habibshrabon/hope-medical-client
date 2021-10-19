@@ -2,6 +2,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import "./Details.css";
 
 const Details = () => {
   const { id } = useParams();
@@ -16,15 +17,15 @@ const Details = () => {
   const ExactData = details.filter((td) => td.id === id);
 
   return (
-    <div className="container my-5">
+    <div className="container  my-5">
       <h4 className="fw-bold fs-3 mb-5">
         Service Details <hr />
       </h4>
       <div className="row  align-items-center">
         <div className=" col-md-5">
           <img
-            style={{ height: "275px ", width: "500px" }}
-            className="rounded shadow-3"
+            // style={{ height: "275px ", Width: "100%" }}
+            className="rounded shadow-3 img-style"
             src={ExactData[0]?.img}
             alt=""
           />
