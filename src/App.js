@@ -10,6 +10,7 @@ import NotFound from "./componets/NotFound/NotFound";
 import AuthProvider from "./context/AuthProvider";
 import Login from "./componets/Login/Login";
 import PrivateRoute from "./componets/PrivateRoute/PrivateRoute";
+import Details from "./componets/Details/Details/Details";
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
+            <PrivateRoute path="/details/:serviceId">
+              <Details />
+            </PrivateRoute>
             <Route path="*">
               <NotFound />
             </Route>
