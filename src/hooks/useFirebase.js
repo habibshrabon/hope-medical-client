@@ -2,10 +2,11 @@ import {
   getAuth,
   signInWithPopup,
   GoogleAuthProvider,
-  GithubAuthProvider,
   createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
   signOut,
   onAuthStateChanged,
+  updateProfile,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../componets/Firebase/firebase.init";
@@ -18,7 +19,6 @@ const useFirebase = () => {
 
   const auth = getAuth();
   const googleProvider = new GoogleAuthProvider();
-  const githubProvider = new GithubAuthProvider();
 
   //Google sign in content
   const signInUsingGoogle = () => {
@@ -27,26 +27,16 @@ const useFirebase = () => {
       setIsLoading(false)
     );
   };
-  // createUserWithEmailAndPassword(auth, email, password)
-  //   .then((userCredential) => {
-  //     // Signed in
-  //     const user = userCredential.user;
-  //     // ...
-  //   })
-  //   .catch((error) => {
-  //     const errorCode = error.code;
-  //     const errorMessage = error.message;
-  //     // ..
-  //   });
+  const handleUserRegister = (email, password, name) => {
+    return createUserWithEmailAndPassword(auth, email, password);
+  };
 
-  //Github sign in content
-  const signInUsingGithub = () => {
-    setIsLoading(true);
-    signInWithPopup(auth, githubProvider)
-      .then((result) => {
-        setUser(result.user);
-      })
-      .finally(() => setIsLoading(false));
+  const handleUserName = (name) => {
+    updateProfile(auth.currentUser, { displayName: name }).then((result) => {});
+  };
+
+  const handleUserLogin = (email, password) => {
+    return signInWithEmailAndPassword(auth, email, password);
   };
 
   //observe user state change
@@ -74,7 +64,9 @@ const useFirebase = () => {
     user,
     isLoading,
     signInUsingGoogle,
-    signInUsingGithub,
+    handleUserRegister,
+    handleUserLogin,
+    handleUserName,
     logOut,
   };
 };

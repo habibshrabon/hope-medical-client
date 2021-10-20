@@ -50,7 +50,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className=" d-flex justify-content-between text-white text-start mt-5">
+        <div className=" d-md-flex d-block justify-content-between text-white text-start mt-5">
           <div className="">
             <div className="d-flex justify-content-between">
               <p>Privacy & Policy</p>

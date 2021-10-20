@@ -8,7 +8,7 @@ import doctors3 from "../../images/doc-3.jpg";
 const Doctors = () => {
   return (
     <div className="container my-5">
-      <div className="pb-5">
+      <div className="pb-5 text-center">
         <h2>Meet Our Doctors</h2>
         <p>
           Our administration and support staff all have exceptional people
@@ -17,7 +17,7 @@ const Doctors = () => {
       </div>
       <div className="row">
         <div className="col-md-4 mb-3">
-          <div className="card h-100 card-bg shadow">
+          <div className="card h-100 card-bg  box-shadow opacity">
             <img
               src={doctors1}
               style={{ height: "275px" }}
@@ -37,7 +37,7 @@ const Doctors = () => {
           </div>
         </div>
         <div className="col-md-4 mb-3">
-          <div className="card h-100 card-bg shadow">
+          <div className="card h-100 card-bg  box-shadow opacity">
             <img
               src={doctors2}
               style={{ height: "275px" }}
@@ -57,7 +57,7 @@ const Doctors = () => {
           </div>
         </div>
         <div className="col-md-4 mb-3">
-          <div className="card h-100 card-bg shadow">
+          <div className="card h-100 card-bg box-shadow opacity">
             <img
               src={doctors3}
               style={{ height: "275px" }}

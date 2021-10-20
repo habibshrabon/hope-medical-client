@@ -8,8 +8,8 @@ const Service = ({ service }) => {
   const { id, name, img, description } = service;
   return (
     <>
-      <div className="col-md-4 mb-3">
-        <div className="card h-100 card-bg shadow">
+      <div className="col-md-4 mb-3 ">
+        <div className="card h-100 card-bg opacity box-shadow">
           <img
             src={img}
             style={{ height: "275px" }}

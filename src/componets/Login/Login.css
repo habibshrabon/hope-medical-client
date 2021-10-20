@@ -1,0 +1,32 @@
+.login {
+  margin-top: 150px;
+  /* width: 500px !important; */
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.center-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 15px;
+  height: auto;
+}
+
+.google {
+  width: 300px;
+}
+.google img {
+  width: 50px;
+  float: left;
+}
+
+@media only screen and (max-width: 688px) {
+  .login {
+    width: 350px;
+  }
+  .google {
+    width: 200px;
+  }
+}

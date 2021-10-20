@@ -9,7 +9,7 @@ const Appointment = () => {
     <div>
       <section className="container">
         <div className="row align-items-center pb-5">
-          <div className="col-md-6 p-5">
+          <div className="col-md-6 p-5  box-shadow opacity">
             <h2 className="text-center">Search Doctor</h2>
             <h2 className="text-info">Make an Appointment</h2>
             <p className="mb-5">
