@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
-import googleIcon from "../../images/goggle-logo.png";
 import "./Login.css";
 
 const Login = () => {
@@ -23,7 +22,7 @@ const Login = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  //   const [error, setError] = useState("");
+  const [error, setError] = useState("");
   const [isLogin, setIsLogin] = useState(false);
 
   const toggleLogin = (e) => {
@@ -52,7 +51,7 @@ const Login = () => {
             history.push(redirect_url);
           })
           .catch((error) => {
-            console.log(error.message);
+            setError(error.message);
           })
       : handleUserRegister(email, password, name)
           .then((result) => {
@@ -60,14 +59,15 @@ const Login = () => {
             console.log(user);
             handleUserName(name);
             history.push(redirect_url);
+            window.location.reload();
           })
           .catch((error) => {
-            console.log(error.message);
+            setError(error.message);
           });
   };
   return (
     <div
-      className="text-center container  my-5 login"
+      className="text-center container login box-shadow mb-5 mt-5"
       style={{ maxWidth: "600px" }}
     >
       <form onSubmit={handleSignUp}>
@@ -118,7 +118,6 @@ const Login = () => {
             />
           </div>
         </div>
-         
         <div className="row mb-3">
           <div className="col-sm-10 offset-sm-2">
             <div className="form-check">
@@ -134,99 +133,22 @@ const Login = () => {
             </div>
           </div>
         </div>
-         <div className=" mb-3 text-danger">{}</div>   
+         <div className=" mb-3 text-danger">{error}</div>   
         <button type="submit" className="btn btn-style px-3 ms-auto">
              {isLogin ? "Login" : "Register"}   
         </button>
          <br />   
       </form>
-            <br />
-            <br /> 
+          <br />
+           <br /> 
       <button
-        className="google center-style rounded-pill btn-style mx-auto"
+        className="google center-style rounded-pill px-3 py-3 mx-auto"
         onClick={handleGoogleLogin}
       >
-        <img src={googleIcon} alt="google" /> Continue with Google  
+        Continue with Google  
       </button>
     </div>
   );
 };
 
 export default Login;
-
-// // import React, { useState } from "react";
-// // import { Link, useLocation, useHistory } from "react-router-dom";
-// // import useAuth from "../../hooks/useAuth";
-
-// // const Login = () => {
-// //   const { signInUsingGoogle, signInUsingGithub, handleUserRegister } =
-// //     useAuth();
-// //   const location = useLocation();
-// //   const history = useHistory();
-// //   const redirect_uri = location.state?.from || "/home";
-// //   const [email, setEmail] = useState("");
-// //   const [password, setPassword] = useState("");
-
-// //   const handelGoogleLogIn = () => {
-// //     signInUsingGoogle().then(() => {
-// //       history.push(redirect_uri);
-// //     });
-// //   };
-// //   const handelEmailChange = (e) => {
-// //     setEmail(e.target.value);
-// //   };
-// //   const handelPasswordChange = (e) => {
-// //     setPassword(e.target.value);
-// //   };
-
-// //   return (
-// //     <div>
-// //       <div className="py-5">
-// //         <form className=" d-flex justify-content-center">
-// //           <div className="container p-5" style={{ maxWidth: "600px" }}>
-// //             <h2 className="text-center pb-5">Please Login </h2>
-// //             <div>
-// //               <input
-// //                 className="form-control my-3"
-// //                 type="text"
-// //                 onBlur={handelEmailChange}
-// //                 placeholder="Your Email Address"
-// //                 required
-// //               />
-// //               <input
-// //                 className="form-control"
-// //                 type="password"
-// //                 onBlur={handelPasswordChange}
-// //                 name=""
-// //                 id=""
-// //                 placeholder="your Password"
-// //                 required
-// //               />
-
-// //               <input
-// //                 className="form-control mt-3 btn-style"
-// //                 onClick={handleUserRegister}
-// //                 type="submit"
-// //                 value="Login"
-// //               />
-// //             </div>
-// //           </div>
-// //         </form>
-// //         <br />
-// //         <Link className="pb-5 text-decoration-none" to="/register">
-// //           New user?
-// //         </Link>
-// //       </div>
-// //       <div className="mb-5">
-// //         <button onClick={handelGoogleLogIn} className="btn btn-info mx-3">
-// //           Google Sign In
-// //         </button>
-// //         <button onClick={signInUsingGithub} className="btn btn-danger">
-// //           Github sign In
-// //         </button>
-// //       </div>
-// //     </div>
-// //   );
-// // };
-
-// // export default Login;

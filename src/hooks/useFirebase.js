@@ -19,7 +19,6 @@ const useFirebase = () => {
 
   const auth = getAuth();
   const googleProvider = new GoogleAuthProvider();
-
   //Google sign in content
   const signInUsingGoogle = () => {
     setIsLoading(true);
@@ -27,14 +26,18 @@ const useFirebase = () => {
       setIsLoading(false)
     );
   };
+
+  //handel user register
   const handleUserRegister = (email, password, name) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
+  //handel user name
   const handleUserName = (name) => {
     updateProfile(auth.currentUser, { displayName: name }).then((result) => {});
   };
 
+  //handel user login
   const handleUserLogin = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
   };

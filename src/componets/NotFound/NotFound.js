@@ -9,7 +9,7 @@ const NotFound = () => {
     <div>
       <img style={{ width: "100%" }} src={image} alt="404" />
       <Link to="/">
-        <button className="btn-style px-3 my-5 rounded-3 ">
+        <button className="btn-style px-3 my-5 rounded-3">
           <FontAwesomeIcon icon={faArrowRight} /> Go Back
         </button>
       </Link>

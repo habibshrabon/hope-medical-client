@@ -24,13 +24,13 @@ const Doctors = () => {
               className="card-img-top justify-content-center align-items-center img-fluid"
               alt=""
             />
-            <div className="card-body">
-              <h3 className="card-title text-center">Richard Muldoone</h3>
+            <div className="card-body text-center">
+              <h3 className="card-title mb-5">Richard Muldoone</h3>
               <p className="text-info">
                 Specialty - Senior Consultant, Orthopedics
               </p>
               <p>Degree - MBBS, MS (Orthopedic)</p>
-              <button className="btn btn-style px-3 ms-auto">
+              <button className="btn btn-style px-3 ms-auto mt-5">
                 <FontAwesomeIcon icon={faArrowRight} /> Book Now
               </button>
             </div>
@@ -44,13 +44,13 @@ const Doctors = () => {
               className="card-img-top justify-content-center align-items-center img-fluid"
               alt=""
             />
-            <div className="card-body">
-              <h3 className="card-title text-center">Richard Muldoone</h3>
+            <div className="card-body text-center">
+              <h3 className="card-title text-center mb-5">Linda Tobin</h3>
               <p className="text-info">Cardiology Specialist</p>
               <p>
                 Degree - MBBS, MD (Cardiology), FAPSIC, FSCAI (USA), FACC (USA)
               </p>
-              <button className="btn btn-style px-3 ms-auto">
+              <button className="btn btn-style px-3 ms-auto mt-5">
                 <FontAwesomeIcon icon={faArrowRight} /> Book Now
               </button>
             </div>
@@ -64,13 +64,13 @@ const Doctors = () => {
               className="card-img-top justify-content-center align-items-center img-fluid"
               alt=""
             />
-            <div className="card-body">
-              <h3 className="card-title text-center">Richard Muldoone</h3>
+            <div className="card-body text-center">
+              <h3 className="card-title text-center mb-5">Marvin Campble</h3>
               <p className="text-info">
                 Specialty - Associate Consultant - Oncology
               </p>
               <p>Degree - MBBS, FCPS</p>
-              <button className="btn btn-style px-3 ms-auto">
+              <button className="btn btn-style px-3 ms-auto mt-5">
                 <FontAwesomeIcon icon={faArrowRight} /> Book Now
               </button>
             </div>
